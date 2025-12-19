@@ -116,51 +116,51 @@ const etudiants = [
 ];
 localStorage.setItem("etudiants", JSON.stringify(etudiants));
 
-const presences = [
-  {
-    nomComplet: "Amine Sakhri",
-    presences: "oui",
-    absences: "non",
-    heureArrivee: "08:45",
-    description: "Embouteillage",
-  },
-  {
-    nomComplet: "Sara Elalami",
-    presences: "oui",
-    absences: "non",
-    heureArrivee: null,
-    description: null,
-  },
-  {
-    nomComplet: "Yassine Benali",
-    presences: "non",
-    absences: "oui",
-    heureArrivee: null,
-    description: "Absent toute la journée",
-  },
-  {
-    nomComplet: "Hajar AitAli",
-    presences: "oui",
-    absences: "non",
-    heureArrivee: "09:05",
-    description: "Problème de transport",
-  },
-  {
-    nomComplet: "Omar Chakir",
-    presences: "oui",
-    absences: "non",
-    heureArrivee: null,
-    description: null,
-  },
-  {
-    nomComplet: "Imane Zahra",
-    presences: "non",
-    absences: "oui",
-    heureArrivee: null,
-    description: "Maladie",
-  },
-];
-localStorage.setItem("presences", JSON.stringify(presences));
+// const presences = [
+//   {
+//     nomComplet: "Amine Sakhri",
+//     presences: "oui",
+//     absences: "non",
+//     heureArrivee: "08:45",
+//     description: "Embouteillage",
+//   },
+//   {
+//     nomComplet: "Sara Elalami",
+//     presences: "oui",
+//     absences: "non",
+//     heureArrivee: null,
+//     description: null,
+//   },
+//   {
+//     nomComplet: "Yassine Benali",
+//     presences: "non",
+//     absences: "oui",
+//     heureArrivee: null,
+//     description: "Absent toute la journée",
+//   },
+//   {
+//     nomComplet: "Hajar AitAli",
+//     presences: "oui",
+//     absences: "non",
+//     heureArrivee: "09:05",
+//     description: "Problème de transport",
+//   },
+//   {
+//     nomComplet: "Omar Chakir",
+//     presences: "oui",
+//     absences: "non",
+//     heureArrivee: null,
+//     description: null,
+//   },
+//   {
+//     nomComplet: "Imane Zahra",
+//     presences: "non",
+//     absences: "oui",
+//     heureArrivee: null,
+//     description: "Maladie",
+//   },
+// ];
+// localStorage.setItem("presences", JSON.stringify(presences));
 
 const historique = [
   {
@@ -173,7 +173,7 @@ localStorage.setItem("historique", JSON.stringify(historique));
 function estEnRetard(heure) {
   if (!heure) return false;
   const [h, m] = heure.split(":").map(Number);
-  return h * 60 + m > 8 * 60 + 30; 
+  return h * 60 + m > 8 * 60 + 30;
 }
 
 function compterAbsentsParDate(date) {

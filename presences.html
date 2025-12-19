@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html class="dark:" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>gestion</title>
+</head>
+<body class="bg-blue-950 flex justify-center items-center h-screen md:max-xl:flex ">
+    <div class="w-200">
+        <div><h1 class="text-white text-center text-xl font-bold my-10 hover:scale-105 cursor-pointer  duration-300">Absences & Retards</h1>
+        </div>
+        <table class="rounded-2xl border shadow-2xl w-full overflow-hidden ">
+            <thead class="bg-blue-950">
+                <tr class="hover:bg-blue-200 hover:scale-105 cursor-pointer duration-300">
+                    <th class="border px-4 py-3  text-center text-xs font-medium text-white  "rowspan="2">Nom complet</th>
+                    <th class="border px-4 py-3  text-center text-xs font-medium text-white  "rowspan="2">présences</th>
+                    <th class="border px-4 py-3  text-center text-xs font-medium text-white  " rowspan="2" >Absences</th>
+                    <th class="border px-4 py-3  text-center text-xs font-medium text-white  " colspan="2">Retards </th>
+                    <tr class="hover:bg-blue-200 hover:scale-105 cursor-pointer duration-300">
+                        <th class="border px-4 py-3  text-center text-xs font-medium  text-white ">Heure d’arrivée</th>
+                        <th class="border px-4 py-3  text-center text-xs font-medium  text-white ">Description</th>
+                    </tr>
+                 </tr>
+            </thead>
+            <tbody id="bodyJ"> 
+            </tbody>
+        </table>
+    </div>
+    <script src="presences.js"></script>
+</body>
+</html>
